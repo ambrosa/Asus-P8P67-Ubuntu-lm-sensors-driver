@@ -1,0 +1,29 @@
+December 2011
+
+THANKS to Ian Dobson
+
+Main thread:
+http://ubuntuforums.org/showthread.php?t=1675550
+
+This is the w83627ehf driver kernel module modded to include chip nct6776f and nct6775f used in Asus P8P67 motherboards.
+
+
+Tested in my Xubuntu 11.10 64bit, Asus P8P7 LE and Intel Core I7-2600
+
+1) download this repo:
+ git clone 
+
+2) compile and install module:
+ cd Asus-P8P67-Ubuntu-lm-sensors-driver
+ make 
+ sudo make install
+ sudo modprobe w83627ehf
+
+3) add to /etc/sensors.d/ new configuration
+ sudo cp w83627ehf.conf /etc/sensors.d/w83627ehf.conf
+
+4) run sensors-detect
+ sudo sensors-detect
+
+5) run 'sensors' to see if all goes fine :-)
+
