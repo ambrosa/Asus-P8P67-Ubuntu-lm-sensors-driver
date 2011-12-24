@@ -11,7 +11,7 @@ This is the w83627ehf driver kernel module modded to include chip nct6776f and n
 Tested in my Xubuntu 11.10 64bit, Asus P8P7 LE and Intel Core I7-2600
 
 1) download this repo:
- git clone 
+ git clone https://ambrosa@github.com/ambrosa/Asus-P8P67-Ubuntu-lm-sensors-driver.git
 
 2) compile and install module:
  cd Asus-P8P67-Ubuntu-lm-sensors-driver
